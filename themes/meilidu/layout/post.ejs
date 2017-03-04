@@ -52,10 +52,10 @@
 		<div id="disqus_thread"></div>
 <script>
 var disqus_config = function () {
-this.page.url = <%- url_for(page.path) %>;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = <%- page.path %>; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = "<%= page.permalink %>";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "<%= page.path %>"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
-*/
+
 (function() { // DON'T EDIT BELOW THIS LINE
 var d = document, s = d.createElement('script');
 s.src = 'https://vaenae.disqus.com/embed.js';
